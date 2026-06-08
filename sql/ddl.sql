@@ -1,5 +1,5 @@
 -- =============================================================
--- DDL: go_explore database
+-- DDL: python_explore database
 -- Schema : user_management
 -- Run    : Execute via DBeaver, psql, or any SQL client
 -- =============================================================

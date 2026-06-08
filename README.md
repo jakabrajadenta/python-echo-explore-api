@@ -125,7 +125,7 @@ cp .env.example .env
 Edit file `.env` sesuai konfigurasi database lokal:
 
 ```env
-DB_NAME=go_explore
+DB_NAME=python_explore
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_HOST=localhost
@@ -143,19 +143,19 @@ ALLOWED_HOSTS=*
 ### 1. Buat database di PostgreSQL
 
 ```sql
-CREATE DATABASE go_explore;
+CREATE DATABASE python_explore;
 ```
 
 ### 2. Jalankan DDL — buat schema, tabel, index, dan trigger
 
 ```bash
-psql -U postgres -d go_explore -f sql/ddl.sql
+psql -U postgres -d python_explore -f sql/ddl.sql
 ```
 
 ### 3. Jalankan DML — isi data awal
 
 ```bash
-psql -U postgres -d go_explore -f sql/dml.sql
+psql -U postgres -d python_explore -f sql/dml.sql
 ```
 
 ### 4. Jalankan migrasi Django
